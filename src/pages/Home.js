@@ -29,7 +29,7 @@ export default function Home() {
       <p className="mx-auto leading-relaxed text-base mb-4">
         Expect to find a diverse range of topics covered here, including:
       </p>
-      <ul class="list-disc ml-4 mb-8">
+      <ul className="list-disc ml-4 mb-8">
         <li>
           In-depth tutorials and guides on Python programming, React
           development, and Drupal customization.
