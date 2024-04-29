@@ -11,12 +11,13 @@ export default function Article() {
     const article = articleContent.find((article) => {
         return article.name === name;
     });
+    const baseUrl = "https://mern-blog-backend-59j4.onrender.com";
     const [articleInfo, setArticleInfo] = useState({ comments: [] })
     
     useEffect(() => {
       const fetchData = async () => {
           try {
-              const result = await fetch(`/api/articles/${name}`);
+              const result = await fetch(`${baseUrl}/api/articles/${name}`);
               const body = await result.json();
               setArticleInfo(body);
           } catch (error) {

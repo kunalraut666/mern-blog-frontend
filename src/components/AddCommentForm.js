@@ -3,9 +3,10 @@ import React, {useState} from 'react'
 export default function AddCommentForm({ articleName, setArticleInfo }) {
     const [username, setUsername] = useState("");
     const [commentText, setCommentText] = useState("");
+    const baseUrl = "https://mern-blog-backend-59j4.onrender.com";
     const addComments = async () => {
         try {
-            const result = await fetch(`/api/articles/${articleName}/add-comments`, {
+            const result = await fetch(`${baseUrl}/api/articles/${articleName}/add-comments`, {
                 method: 'POST',
                 body: JSON.stringify({
                     username,
