@@ -38,7 +38,7 @@ export default function Article() {
       <h1 className="sm:text-4xl text-2xl font-bold my-6 text-grey-900">
         {article.title}
       </h1>
-      <img src={article.thumbnail} alt="Article Image" className="my-4" />
+      <img src={article.thumbnail} alt="Article Thumbnail" className="my-4" />
       {article.content.map((content, index) => (
         <p className="mx-auto leading-relaxed text-base mb-4" key={index}>
             {content}
