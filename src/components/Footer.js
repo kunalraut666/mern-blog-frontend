@@ -120,7 +120,7 @@ export default function Footer() {
             <nav>
               <a
                 href="https://kunalreact.netlify.app/"
-                rel="nofollow"
+                rel="noreferrer"
                 className="text-sm text-green-500 hover:underline"
                 target='_blank'
               >
