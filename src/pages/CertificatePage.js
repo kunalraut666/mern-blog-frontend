@@ -13,7 +13,7 @@ import certificateImg11 from "../assets/certificates/guitar.jpg";
 import certificateImg12 from "../assets/certificates/mern-stack.jpg";
 import certificateImg13 from "../assets/certificates/reactjs.jpg";
 import certificateImg14 from "../assets/certificates/react-game.jpg";
-import certificateImg15 from "../assets/certificates/Web-Development.jpg";
+
 
 
 const CertificatePage = () => {
