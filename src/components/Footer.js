@@ -122,7 +122,7 @@ export default function Footer() {
                 href="https://kunalreact.netlify.app/"
                 rel="nofollow"
                 className="text-sm text-green-500 hover:underline"
-                target='__blank'
+                target='_blank'
               >
                 Personal Portfolio
               </a>

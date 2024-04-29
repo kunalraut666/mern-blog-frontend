@@ -4,7 +4,7 @@ export const ProjectCard = ({ title, description, imgUrl, link}) => {
 
   return (
     <div className="w-full">
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
         <div>
           <img className="w-full h-auto" src={imgUrl} alt={title} /> {/* Added h-auto to ensure proper image height */}
           <div className="mt-2">
