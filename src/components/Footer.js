@@ -6,6 +6,13 @@ export default function Footer() {
 
     const currentYear = new Date().getFullYear();
 
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Optional: Use smooth scrolling animation
+      });
+    };
+
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -44,24 +51,24 @@ export default function Footer() {
                 <nav>
                   <ul className="space-y-2">
                     <li>
-                      <Link to="/article/learn-react" className="hover:text-green-500">
+                      <Link to="/article/learn-react" className="hover:text-green-500" onClick={scrollToTop}>
                       The Fastest Way to Learn React
                       </Link>
                     </li>
                     <li>
-                      <Link to="/article/learn-node" className="hover:text-green-500">
+                      <Link to="/article/learn-node" className="hover:text-green-500" onClick={scrollToTop}>
                       How to Build a Node Server in 10 Minutes
                       </Link>
                     </li>
                     <li>
-                      <Link to="/article/my-thoughts-on-learning-react" className="hover:text-green-500">
+                      <Link to="/article/my-thoughts-on-learning-react" className="hover:text-green-500" onClick={scrollToTop}>
                         My Thoughts on Learning ReactJS
                       </Link>
                     </li>
                   </ul>
                 </nav>
                 <div className="mt-4">
-                  <Link to="/articles-list" className="text-green-500">
+                  <Link to="/articles-list" className="text-green-500" onClick={scrollToTop}>
                     More Articles
                   </Link>
                 </div>
@@ -73,17 +80,17 @@ export default function Footer() {
                 <nav>
                   <ul className="space-y-2">
                     <li>
-                      <Link to="/skills" className="hover:text-green-500">
+                      <Link to="/skills" className="hover:text-green-500" onClick={scrollToTop}>
                         Skills
                       </Link>
                     </li>
                     <li>
-                      <Link to="/projects" className="hover:text-green-500">
+                      <Link to="/projects" className="hover:text-green-500" onClick={scrollToTop}>
                         Projects
                       </Link>
                     </li>
                     <li>
-                      <Link to="/education" className="hover:text-green-500">
+                      <Link to="/education" className="hover:text-green-500" onClick={scrollToTop}>
                         Education
                       </Link>
                     </li>
@@ -91,6 +98,7 @@ export default function Footer() {
                       <Link
                         to="/certifications"
                         className="hover:text-green-500"
+                        onClick={scrollToTop}
                       >
                         Certifications
                       </Link>
