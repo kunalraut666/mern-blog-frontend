@@ -1,5 +1,6 @@
 import React from 'react';
-import myPic from '../assets/img/my-pic-circle.png'
+import myPic from '../assets/img/my-pic-circle.png';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 
@@ -43,26 +44,26 @@ export default function Footer() {
                 <nav>
                   <ul className="space-y-2">
                     <li>
-                      <a href="/article/learn-react" className="hover:text-green-500">
+                      <Link to="/article/learn-react" className="hover:text-green-500">
                       The Fastest Way to Learn React
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/article/learn-node" className="hover:text-green-500">
+                      <Link to="/article/learn-node" className="hover:text-green-500">
                       How to Build a Node Server in 10 Minutes
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/article/my-thoughts-on-learning-react" className="hover:text-green-500">
+                      <Link to="/article/my-thoughts-on-learning-react" className="hover:text-green-500">
                         My Thoughts on Learning ReactJS
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
                 <div className="mt-4">
-                  <a href="/articles-list" className="text-green-500">
+                  <Link to="/articles-list" className="text-green-500">
                     More Articles
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="footer__nav-col">
@@ -72,27 +73,27 @@ export default function Footer() {
                 <nav>
                   <ul className="space-y-2">
                     <li>
-                      <a href="/skills" className="hover:text-green-500">
+                      <Link to="/skills" className="hover:text-green-500">
                         Skills
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/projects" className="hover:text-green-500">
+                      <Link to="/projects" className="hover:text-green-500">
                         Projects
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/education" className="hover:text-green-500">
+                      <Link to="/education" className="hover:text-green-500">
                         Education
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        href="/certifications"
+                      <Link
+                        to="/certifications"
                         className="hover:text-green-500"
                       >
                         Certifications
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
