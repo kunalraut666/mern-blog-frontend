@@ -44,7 +44,7 @@ export default function Skills() {
       <h1 className="text-[#00040f] font-bold text-5xl text-center max-sm:text-4xl">SKILLS</h1>
       {/* Conditional rendering for mobile devices */}
       {window.innerWidth <= 640 ? (
-        <div className="grid justify-center p-5 gap-2 mt-10">
+        <div className="grid p-5 gap-2 mt-10">
           {skillsData.map((skill, index) => (
             <SkillItem key={index} iconSrc={skill.iconSrc} label={skill.label} />
           ))}
