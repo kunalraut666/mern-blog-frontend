@@ -11,6 +11,7 @@ import projImg8 from "../assets/project-imgs/project-img8.png";
 import projImg9 from "../assets/project-imgs/project-img9.png";
 import projImg10 from "../assets/project-imgs/project-img10.png";
 import projImg11 from "../assets/project-imgs/project-img11.png";
+import projImg12 from "../assets/project-imgs/project-img12.png";
 
 
 export const Projects = () => {
@@ -81,6 +82,12 @@ export const Projects = () => {
       description: "I've developed a text analyzer in React for easy text input and analysis. With functions like converting case, extracting sentences and words, and providing statistics such as word count and density, it offers a user-friendly experience. Powered by React's structure and state management, it ensures quick updates and responsive interactions, making it a valuable tool for text insights.",
       imgUrl: projImg11,
       link: "https://texttribe.netlify.app/"
+    },
+    {
+      title: "Bulletin Spot News Platform",
+      description: "I've built a news website using React for the frontend and NewsAPI for fetching news articles. It offers a dynamic interface to keep users informed about current events.",
+      imgUrl: projImg12,
+      link: 'https://github.com/kunalraut666/react-news-app'
     },
   ];
 
